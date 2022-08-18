@@ -12,7 +12,45 @@
     <title>{{ $title }}</title>
 </head>
 <body>
-     <section class="sec-left d-flex" style="solid red 1px">
+  <div class="container">
+    <div class="sidebar">
+      <div class="header">
+        <div class="illustration">
+          <img src="/img/logo.svg" class="icon" width="130px">
+        </div>
+      </div>
+      <div class="main">
+      <p class="label-menu">Menu</p>
+        <div class="list-item mb-3">
+          <a href="#">
+            <img src="img/dashboard.png" alt="" class="icon">
+          <span class="description">Dashboard</span>
+          </a>
+        </div>
+        <div class="list-item mb-3">
+          <a href="#">
+            <img src="img/profile.png" alt="" class="icon">
+          <span class="description">Profile</span>
+          </a>
+        </div>
+        <div class="list-item mb-3">
+          <a href="#">
+            <img src="img/logout.png" alt="" class="icon">
+          <span class="description">Logout</span>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="main-content">
+     <div class="row">
+      <div class="col">
+        <img src="/img/bars.png" class="icon mt-3" width="29px">
+      </div>
+     </div>    
+    </div>
+
+  </div>
+     {{-- <section class="sec-left d-flex" style="solid red 1px">
     <div class="main-left w-50 h-100 bg-danger">
       <div class="row justify-content-start h-100">
         <div class="col-6" >          
@@ -23,16 +61,7 @@
     <div class="col-6 bg-warning" >
         @yield('content')
     </div>
-  </section>
-    {{-- <section class="sec-left d-flex" style="solid red 1px">
-    <div class="main-left h-100">
-      <div class="row justify-content-center h-100">
-        <div class="col-6" >          
-        </div>
-      </div>
-    </div>
-    <div class="col-2 bg-danger" >
-    </div>
-</section> --}}
+  </section> --}}
+
 </body>
 </html>
